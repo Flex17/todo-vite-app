@@ -32,5 +32,7 @@ export default tseslint.config({
     ],
     indent: [2, 4],
     quotes: ["error", "double"],
+    "semi": [2, "always"],
+    "object-curly-spacing": ["error", "always"]
   },
 })

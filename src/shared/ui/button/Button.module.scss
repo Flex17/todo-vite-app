@@ -1,0 +1,25 @@
+.wrapper {
+    width: 100%;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 16px;
+    border: 1px solid var(--blue-color);
+    color: var(--blue-color);
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        background-color: var(--blue-color);
+        color: var(--dark-space-color);
+    }
+
+    &:disabled {
+        border-color: var(--disabled-color);
+        color: var(--gray-color);
+        cursor: default;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}

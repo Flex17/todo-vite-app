@@ -1,0 +1,18 @@
+.wrapper {
+    padding: 20px 30px;
+    justify-content: space-between;
+}
+
+.links {
+    gap: 15px;
+}
+
+.title {
+    color: var(--dark-space-color);
+}
+
+.wrapper,
+.links {
+    display: flex;
+    align-items: center;
+}

@@ -1,10 +1,16 @@
-import { StrictMode } from "react"
-import { createRoot } from "react-dom/client"
-import App from "app/App.tsx"
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import App from "app/App.tsx";
 import "./app/styles/index.scss";
+import { BrowserRouter } from "react-router-dom";
+import { TodoProvider } from "entities/todo";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <App />
+        <BrowserRouter>
+            <TodoProvider>
+                <App />
+            </TodoProvider>
+        </BrowserRouter>
     </StrictMode>,
-)
+);

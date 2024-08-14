@@ -1,0 +1,11 @@
+.wrapper {
+    font-size: 16px;
+    color: var(--dark-space-color);
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+.active {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}

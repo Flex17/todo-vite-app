@@ -1,13 +1,16 @@
 import "./App.scss";
-import {classNames} from "shared/libs";
+import { classNames } from "shared/libs";
+import { Navbar } from "widgets/navbar";
+import { AppRouter } from "./providers/router/ui/AppRouter.tsx";
 
 function App() {
 
     return (
         <div className={classNames("")}>
-            test app
+            <Navbar/>
+            <AppRouter/>
         </div>
-    )
+    );
 }
 
 export default App;

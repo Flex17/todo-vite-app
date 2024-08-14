@@ -1,0 +1,27 @@
+.wrapper {
+    border: 1px solid var(--blue-color);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.text_wrapper {
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wrapper,
+.main_part {
+    align-items: center;
+    gap: 15px;
+}
+
+.wrapper,
+.main_part,
+.text_wrapper {
+    display: flex;
+}

@@ -1,0 +1,22 @@
+.wrapper {
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid var(--blue-color);
+    border-radius: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title,
+.inputs {
+    margin-bottom: 15px;
+}
