@@ -14,7 +14,7 @@ export const UncompletedTodosList = ({ className }: UncompletedTodosListProps) =
     return (
         <div className={classNames(css.wrapper, {}, [className])}>
             {
-                uncompletedTodos.length
+                uncompletedTodos?.length
                     ? uncompletedTodos.map(todo => {
                         return (
                             <TodoCard
@@ -25,7 +25,7 @@ export const UncompletedTodosList = ({ className }: UncompletedTodosListProps) =
                             />
                         );
                     })
-                    : <div>Нет незавершенных задач</div>
+                    : <h3 className={css.not_found}>Нет незавершенных задач</h3>
             }
         </div>
     );

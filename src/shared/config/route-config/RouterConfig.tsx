@@ -1,5 +1,6 @@
 import { RouteObject } from "react-router-dom";
 import { Home } from "pages/home";
+import { Completed } from "pages/completed";
 
 export enum MainAppRoutes {
 	HOME = "home",
@@ -18,6 +19,6 @@ export const routerConfig: Record<MainAppRoutes, RouteObject> = {
     },
     [MainAppRoutes.COMPLETED]: {
         path: MainRouterPath.completed,
-        element: <Home />,
+        element: <Completed />,
     },
 };

@@ -28,9 +28,9 @@ export const TodoCard = ({ className, data, removeAction, selectAction }: TodoCa
                     {selectAction}
                 </div>
                 <div className={css.text_wrapper}>
-                    <h3>{title}</h3>
+                    <h3 className={classNames("", textMods)}>{title}</h3>
                     {
-                        description && <p>{description}</p>
+                        description && <p className={classNames("", textMods)}>{description}</p>
                     }
                 </div>
             </div>
